@@ -2,6 +2,7 @@ import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Mission from './Mission';
 import missionsFetch from '../../redux/missions/missionsFetch';
+import './missions.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer);
@@ -10,14 +11,14 @@ const Missions = () => {
   useEffect(() => { dispatch(missionsFetch()); }, []);
 
   return (
-    <div>
-      <table>
+    <div className="container">
+      <table className="table">
         <tbody>
           <tr>
-            <th>Missions</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>Action</th>
+            <th className="head">Missions</th>
+            <th className="head">Description</th>
+            <th className="head">Status</th>
+            <th className="head">Action</th>
           </tr>
           {missions.map(
             (mission) => (
