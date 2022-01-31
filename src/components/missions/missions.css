@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-
 .container {
   width: 90%;
   margin: 2rem auto;
@@ -31,7 +30,7 @@ th {
 tr > th:first-of-type {
   text-align: left;
   padding: 0.8rem 0 0 0.4rem;
-  font-size: bold;
+  font-weight: bold;
 }
 
 tr > th:nth-of-type(2) {
