@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Rockets() {
-  return <div></div>;
+  return <div />;
 }
 
 export default Rockets;
