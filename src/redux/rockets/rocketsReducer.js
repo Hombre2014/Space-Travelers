@@ -8,10 +8,12 @@ export const fetchRocket = (payload) => ({
 });
 
 const reducer = (state = initialState, action) => {
-  if (action.type === FETCH_ROCKET) {
-    return [...action.payload];
+  switch (action.type) {
+    case FETCH_ROCKET:
+      return [...action.payload];
+    default:
+      return state;
   }
-  return state;
 };
 
 export default reducer;

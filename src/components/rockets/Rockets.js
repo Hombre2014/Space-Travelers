@@ -11,8 +11,6 @@ function Rockets() {
     dispatch(getRockets());
   }, [dispatch]);
 
-  console.log(availabeRockets);
-
   return (
     <div>
       { availabeRockets.map((rocket) => (
