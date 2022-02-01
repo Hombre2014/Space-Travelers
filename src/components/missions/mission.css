@@ -1,4 +1,4 @@
-.member {
+.not-member {
   background-color: rgb(104, 104, 104);
   color: #fff;
   padding: 0.2rem;
@@ -8,7 +8,23 @@
 .action {
   font-size: 1.25rem;
   padding: 0.3rem;
-  border-color: rgb(104, 104, 104);
+  border: 2px solid rgb(104, 104, 104);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.active-member {
+  background-color: #18a2b8;
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+.leave {
+  font-size: 1.25rem;
+  padding: 0.3rem;
+  color: #e95460;
+  border: 2px solid #e95460;
   border-radius: 4px;
   cursor: pointer;
 }
