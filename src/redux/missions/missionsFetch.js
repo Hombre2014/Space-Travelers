@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import { getMissions } from './missionsReducer';
 
 const URL = 'https://api.spacexdata.com/v3/missions';

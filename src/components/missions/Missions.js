@@ -1,5 +1,6 @@
 import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import Mission from './Mission';
 import missionsFetch from '../../redux/missions/missionsFetch';
 import './missions.css';
@@ -23,7 +24,7 @@ const Missions = () => {
           {missions.map(
             (mission) => (
               <Mission
-                key="mission_id"
+                key={uuidv4()}
                 mission_name={mission.mission_name}
                 description={mission.description}
               />

@@ -1,18 +1,13 @@
-/* eslint-disable camelcase */
-/* eslint-disable no-unused-vars */
-import { useDispatch } from 'react-redux';
 import './mission.css';
 
 const Mission = (mission) => {
   const {
-    mission_id, mission_name, description,
+    mission_name: missionName, description,
   } = mission;
-
-  const dispatch = useDispatch();
 
   return (
     <tr>
-      <th>{mission_name}</th>
+      <th>{missionName}</th>
       <th>{description}</th>
       <th>
         <span><span className="member">NOT A MEMBER</span></span>
