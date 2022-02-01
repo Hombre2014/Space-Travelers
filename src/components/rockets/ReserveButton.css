@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+.rButton {
+  margin: 5px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  background-color: #287cff;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
