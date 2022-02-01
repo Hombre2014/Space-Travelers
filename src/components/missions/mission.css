@@ -1,0 +1,14 @@
+.member {
+  background-color: rgb(104, 104, 104);
+  color: #fff;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+.action {
+  font-size: 1.25rem;
+  padding: 0.3rem;
+  border-color: rgb(104, 104, 104);
+  border-radius: 4px;
+  cursor: pointer;
+}
