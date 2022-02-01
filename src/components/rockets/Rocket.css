@@ -53,10 +53,6 @@
     object-fit: cover;
   }
 
-  .rocketName {
-    padding-top: none;
-  }
-
   .rocketDescription {
     max-height: 250px;
   }

@@ -14,7 +14,7 @@ nav {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin: 10px 20px;;
+  margin: 10px 20px;
 }
 
 .menuLogo {
@@ -35,7 +35,7 @@ nav {
 
 .spaceLinks li a {
   text-decoration: none;
-  color: #3dd7C6;
+  color: #3dd7c6;
   font: normal bold 15px 'Popppins', sans-serif;
 }
 
@@ -57,4 +57,3 @@ nav {
     font: normal bold 28px 'Poppins', sans-serif;
   }
 }
-
