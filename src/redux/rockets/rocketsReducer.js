@@ -1,7 +1,17 @@
-import React from 'react';
+const FETCH_ROCKET = 'rocketStore/rockets/FETCH_ROCKET';
 
-function rocketsReducer() {
-  return <div />;
-}
+const initialState = [];
 
-export default rocketsReducer;
+export const fetchRocket = (payload) => ({
+  type: FETCH_ROCKET,
+  payload,
+});
+
+const reducer = (state = initialState, action) => {
+  if (action.type === FETCH_ROCKET) {
+    return [...action.payload];
+  }
+  return state;
+};
+
+export default reducer;
