@@ -6,7 +6,7 @@ const missionsFetch = () => async (dispatch) => {
   const res = await fetch(URL);
   const missions = await res.json();
 
-  dispatch(getMissions(missions));
+  dispatch(getMissions(missions.slice(0, 4)));
 };
 
 export default missionsFetch;

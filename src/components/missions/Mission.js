@@ -1,9 +1,13 @@
+import { useDispatch } from 'react-redux';
+import { joinMission } from '../../redux/missions/missionsReducer';
 import './mission.css';
 
 const Mission = (mission) => {
   const {
-    mission_name: missionName, description,
+    mission_id: missionId, mission_name: missionName, description,
   } = mission;
+
+  const dispatch = useDispatch();
 
   return (
     <tr>
@@ -13,7 +17,7 @@ const Mission = (mission) => {
         <span><span className="member">NOT A MEMBER</span></span>
       </th>
       <th>
-        <button type="button" className="action">Join Mission</button>
+        <button type="button" className="action" onClick={() => dispatch(joinMission(missionId))}>Join Mission</button>
       </th>
     </tr>
   );
