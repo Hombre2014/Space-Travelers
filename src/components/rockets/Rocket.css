@@ -39,7 +39,7 @@
   .rocketData {
     display: flex;
     align-items: flex-start;
-    flex-wrap: nowrap;
+    gap: 10px;
   }
 
   .rocketImage {

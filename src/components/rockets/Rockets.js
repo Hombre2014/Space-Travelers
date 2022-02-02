@@ -10,16 +10,16 @@ function Rockets() {
   useEffect(() => {
     dispatch(getRockets());
   }, [dispatch]);
-
   return (
     <div>
       { availabeRockets.map((rocket) => (
         <Rocket
           key={uuidv4()}
           id={rocket.id}
-          name={rocket.rocket_name}
+          name={rocket.name}
           description={rocket.description}
-          images={rocket.flickr_images}
+          images={rocket.images}
+          reserved={rocket.reserved}
         />
       ))}
     </div>
