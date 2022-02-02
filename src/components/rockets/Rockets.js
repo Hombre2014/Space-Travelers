@@ -4,11 +4,11 @@ import { v4 as uuidv4 } from 'uuid';
 import Rocket from './Rocket';
 
 function Rockets() {
-  const availabeRockets = useSelector((state) => state.rocketsReducer);
+  const availableRockets = useSelector((state) => state.rocketsReducer);
 
   return (
     <div>
-      { availabeRockets.map((rocket) => (
+      { availableRockets.map((rocket) => (
         <Rocket
           key={uuidv4()}
           id={rocket.id}

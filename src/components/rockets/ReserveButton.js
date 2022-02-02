@@ -17,7 +17,7 @@ const ReservedButton = (props) => {
   };
   return (
     <span>
-      { reserved ? <button style={{ backgroundColor: '#888' }} onClick={unreserve} className="rButton" type="button">Cancel Reservation</button>
+      { reserved ? <button onClick={unreserve} className="rButton clicked" type="button">Cancel Reservation</button>
         : <button onClick={reserve} className="rButton" type="button">Reserve Rocket</button>}
     </span>
   );

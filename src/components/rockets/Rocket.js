@@ -16,7 +16,7 @@ const Rocket = (props) => {
         <div className="rocketDescription">
           <h2 className="rocketName">{name}</h2>
           <div className="reservationSection">
-            { reserved ? <span style={{ backgroundColor: 'teal' }} className="rButton" disabled type="button">Reserved</span>
+            { reserved ? <span style={{ backgroundColor: '#26a7bc', fontSize: '0.875rem', padding: '1px 3px' }} className="rButton" disabled type="button">Reserved</span>
               : ''}
             <span className="description">{description}</span>
           </div>
