@@ -9,7 +9,6 @@ import Profile from './components/profile/Profile';
 import missionsFetch from './redux/missions/missionsFetch';
 import './App.css';
 
-
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {

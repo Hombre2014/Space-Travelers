@@ -38,6 +38,6 @@ const Profile = () => {
       </section>
     </div>
   );
-}
+};
 
 export default Profile;
