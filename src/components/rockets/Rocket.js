@@ -4,7 +4,9 @@ import ReservedButton from './ReserveButton';
 import './Rocket.css';
 
 const Rocket = (props) => {
-  const { name, description, images } = props;
+  const {
+    id, name, description, images, reserved,
+  } = props;
   return (
     <div className="rocketContainer">
       <div className="rocketData">
@@ -13,15 +15,25 @@ const Rocket = (props) => {
         </div>
         <div className="rocketDescription">
           <h2 className="rocketName">{name}</h2>
-          <p className="description">{description}</p>
-          <ReservedButton />
+          <div className="reservationSection">
+            { reserved ? <span style={{ backgroundColor: 'teal' }} className="rButton" disabled type="button">Reserved</span>
+              : ''}
+            <span className="description">{description}</span>
+          </div>
+          <ReservedButton reserved={reserved} id={id} />
         </div>
       </div>
     </div>
   );
 };
 
+Rocket.defaultProps = {
+  reserved: false,
+};
+
 Rocket.propTypes = {
+  id: PropTypes.number.isRequired,
+  reserved: PropTypes.bool,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   images: PropTypes.string.isRequired,
