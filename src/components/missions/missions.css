@@ -21,6 +21,12 @@ th {
   vertical-align: top;
 }
 
+td {
+  border: 2px solid #7e7e7e;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .head {
   font-weight: bold !important;
   text-align: left !important;

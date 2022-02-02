@@ -17,22 +17,22 @@ const Mission = (mission) => {
       {reserved
         ? (
           <>
-            <th>
+            <td>
               <span><span className="active-member">ACTIVE MEMBER</span></span>
-            </th>
-            <th>
+            </td>
+            <td>
               <button type="button" className="leave" onClick={() => dispatch(leaveMission(missionId))}>Leave Mission</button>
-            </th>
+            </td>
           </>
         )
         : (
           <>
-            <th>
+            <td>
               <span><span className="not-member">NOT A MEMBER</span></span>
-            </th>
-            <th>
+            </td>
+            <td>
               <button type="button" className="action" onClick={() => dispatch(joinMission(missionId))}>Join Mission</button>
-            </th>
+            </td>
           </>
         )}
     </tr>
