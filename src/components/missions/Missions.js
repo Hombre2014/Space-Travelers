@@ -27,6 +27,8 @@ const Missions = () => {
                 key={uuidv4()}
                 mission_name={mission.mission_name}
                 description={mission.description}
+                mission_id={mission.mission_id}
+                reserved={mission.reserved}
               />
             ),
           )}
