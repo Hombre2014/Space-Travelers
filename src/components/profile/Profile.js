@@ -1,8 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import './profile.css';
 
-function MyProfile() {
+const Profile = () => {
+  const availabeRockets = useSelector((state) => state.rocketsReducer);
   const missions = useSelector((state) => state.missionsReducer);
   return (
     <div className="container">
@@ -23,9 +25,19 @@ function MyProfile() {
       </section>
       <section>
         <h2>My Rockets</h2>
+        <ul>
+          {availabeRockets
+            && availabeRockets
+              .filter((rocket) => rocket.reserved === true)
+              .map((reserved) => (
+                <li key={uuidv4()}>
+                  {reserved.name}
+                </li>
+              ))}
+        </ul>
       </section>
     </div>
   );
-}
+};
 
-export default MyProfile;
+export default Profile;
