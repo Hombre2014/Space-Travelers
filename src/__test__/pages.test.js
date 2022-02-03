@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Rockets from '../components/rockets/Rockets';
-import Missions from '../components/missions/Missions';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
+import Rockets from '../components/rockets/Rockets';
+import Missions from '../components/missions/Missions';
 import Profile from '../components/profile/Profile';
 
 describe('Testing if all pages renders correctly', () => {
