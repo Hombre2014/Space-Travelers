@@ -10,7 +10,7 @@ const Menu = () => (
         <a href="/">
           <img width="60px" height="60px" src={planet} alt="space logo" />
         </a>
-        <h1 className="logo">Space Travellers&apos; Hub</h1>
+        <h1 className="logo">Space Travelers&apos; Hub</h1>
       </div>
       <ul className="spaceLinks">
         <li>
