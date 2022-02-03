@@ -62,6 +62,11 @@ const rockets = useSelector(state => state.rockets);`
 - [x] Here you need to follow the same logic as with the "Reserve rocket"/"Reserve dragon" and "Join mission" - but you need to set the `reserved` key to `false`.
 - [x] Dispatch these actions upon click on the corresponding buttons.
 
+### Phase, 6, Render UI: My Profile section
+- [x] Compose two/three column layout and list ONLY the rockets/dragons reserved and missions joined by the user (as per design):
+- [x] Render a list of all joined missions (use `filter()`).
+- [x] Render a list of all reserved rockets (use `filter()`).
+
 ## Built With
 
 - Major languages: Javascript
