@@ -14,7 +14,7 @@ function Rockets() {
           id={rocket.id}
           name={rocket.name}
           description={rocket.description}
-          images={rocket.images}
+          images={rocket.images[0]}
           reserved={rocket.reserved}
         />
       ))}

@@ -11,7 +11,7 @@ const Rocket = (props) => {
     <div className="rocketContainer">
       <div className="rocketData">
         <div className="rocketImage">
-          <img src={images[0]} alt="" />
+          <img src={images} alt="" />
         </div>
         <div className="rocketDescription">
           <h2 className="rocketName">{name}</h2>
