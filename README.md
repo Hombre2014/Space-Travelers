@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Charles Gobina and Yuriy Chamkoriyski Space Travellers' Hub project
+# Charles Gobina and Yuriy Chamkoriyski Space Travelers' Hub project
 
 > React app
 
@@ -85,7 +85,7 @@ NOTE: Rockets is the default view, so you must fetch rockets data when the appli
 
 ## Live Demo
 
-No deployment yet.
+[Live demo](https://startreck.netlify.app/)
 
 ### Prerequisites
 
@@ -149,7 +149,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ### Deployment
 
-- Not ready yet.
+With [Netlify](https://www.netlify.com/)
 
 ## Authors
 
