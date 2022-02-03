@@ -7,7 +7,11 @@
 }
 
 .d-flex {
+  padding-top: 2rem;
   display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 nav {
@@ -18,6 +22,7 @@ nav {
 }
 
 .menuLogo {
+  display: flex;
   align-items: center;
 }
 
@@ -26,7 +31,8 @@ nav {
 }
 
 .spaceLinks {
-  justify-content: space-between;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .spaceLinks li {
@@ -35,7 +41,7 @@ nav {
 
 .spaceLinks li a {
   text-decoration: none;
-  color: #3dd7c6;
+  color: #007bff;
   font: normal bold 15px 'Popppins', sans-serif;
 }
 
@@ -43,10 +49,16 @@ nav {
   text-decoration: underline;
 }
 
+.line {
+  color: #7e7e7e;
+  width: 96%;
+  margin: 1rem auto;
+}
+
 @media screen and (min-width: 768px) {
   nav {
     flex-direction: row;
-    padding: 0 100px;
+    justify-content: flex-start;
   }
 
   .spaceLinks {

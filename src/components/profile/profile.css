@@ -3,7 +3,8 @@
   column-gap: 2rem;
 }
 
-.missions {
+.missions,
+.rockets {
   width: 50%;
 }
 
@@ -11,7 +12,8 @@
   margin-bottom: 2rem;
 }
 
-.missions-table {
+.missions-table,
+.rockets-table {
   width: 100%;
   border: 2px solid #7e7e7e;
   border-collapse: collapse;

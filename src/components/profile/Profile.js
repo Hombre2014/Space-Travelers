@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 import './profile.css';
 
 const Profile = () => {
-  const availabeRockets = useSelector((state) => state.rocketsReducer);
+  const availableRockets = useSelector((state) => state.rocketsReducer);
   const missions = useSelector((state) => state.missionsReducer);
   return (
     <div className="container">
@@ -23,18 +23,20 @@ const Profile = () => {
           </tbody>
         </table>
       </section>
-      <section>
+      <section className="missions">
         <h2>My Rockets</h2>
-        <ul>
-          {availabeRockets
-            && availabeRockets
-              .filter((rocket) => rocket.reserved === true)
-              .map((reserved) => (
-                <li key={uuidv4()}>
-                  {reserved.name}
-                </li>
-              ))}
-        </ul>
+        <table className="rockets-table">
+          <tbody>
+            {availableRockets
+              && availableRockets
+                .filter((rocket) => rocket.reserved === true)
+                .map((reserved) => (
+                  <tr className="row" key={uuidv4()}>
+                    <td>{reserved.name}</td>
+                  </tr>
+                ))}
+          </tbody>
+        </table>
       </section>
     </div>
   );

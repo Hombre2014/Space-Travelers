@@ -9,7 +9,8 @@
 }
 
 .rocketContainer {
-  padding: 5px 15px;
+  width: 90%;
+  margin: 1.5rem auto;
 }
 
 .rocketImage img {
@@ -31,9 +32,10 @@
 
 @media screen and (min-width: 768px) {
   .rocketContainer {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    padding: 10px 100px;
+    margin-top: 1.5rem;
   }
 
   .rocketData {
