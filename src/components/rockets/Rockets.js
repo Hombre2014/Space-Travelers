@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import Rocket from './Rocket';
 
-function Rockets() {
+const Rockets = () => {
   const availableRockets = useSelector((state) => state.rocketsReducer);
 
   return (
@@ -20,6 +20,6 @@ function Rockets() {
       ))}
     </div>
   );
-}
+};
 
 export default Rockets;

@@ -40,8 +40,8 @@ NOTE: Rockets is the default view, so you must fetch rockets data when the appli
 
 ### Phase 3, Render UI:lists
 - [x] Use useSelector() Redux Hook to select the state slices and render lists of rockets and missions in corresponding routes. i.e.:
-`// get rockets data from the store
-const rockets = useSelector(state => state.rockets);`
+<br />&nbsp;&nbsp;&nbsp;&nbsp;`// get rockets data from the store`<br />
+&nbsp;&nbsp;&nbsp;&nbsp;`const rockets = useSelector(state => state.rockets);`
 - [x] You can style the whole application "by hand" or you could use [React Bootstrap](https://react-bootstrap.github.io/), a UI library that could speed up the process. This is a popular library and working with its components would be good practice.
 - [x] Render a list of rockets (as per design). For the image of a rocket use the first image in the array of `flickr_images`.
 - [x] Render a table with the missions' data (as per design).
@@ -62,6 +62,15 @@ const rockets = useSelector(state => state.rockets);`
 - [x] Here you need to follow the same logic as with the "Reserve rocket"/"Reserve dragon" and "Join mission" - but you need to set the `reserved` key to `false`.
 - [x] Dispatch these actions upon click on the corresponding buttons.
 
+### Phase 6, Render UI: conditional components rendering
+- [x] Rockets that have already been reserved should show a "Reserved" badge and "Cancel reservation" button instead of the default "Reserve rocket" (as per design).
+- [x] Missions that the user has joined already should show a badge "Active Member" instead of the default "NOT A MEMBER" and a button "Leave Mission" instead of the "Join Mission" button (as per design).
+- [x] Rockets/Dragons and Missions should use the React conditional rendering syntax:
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;`{rocket.reserved && ( `<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`// render Cancel Rocket button`<br />
+&nbsp;&nbsp;&nbsp;&nbsp;`)}`
+
 ### Phase, 6, Render UI: My Profile section
 - [x] Compose two/three column layout and list ONLY the rockets/dragons reserved and missions joined by the user (as per design):
 - [x] Render a list of all joined missions (use `filter()`).
@@ -71,8 +80,8 @@ const rockets = useSelector(state => state.rockets);`
 
 - Major languages: Javascript
 - Frameworks: React.js, Redux
-- Technologies used: Node.js, Babel, Jest, webpack
-- Tested with: - ESLint (JavaScript linting), Stylelint (style linting)
+- Technologies used: Node.js, Babel, webpack
+- Tested with: - ESLint (JavaScript linting), Stylelint (style linting) Jest (React snapshot testing)
 
 ## Live Demo
 

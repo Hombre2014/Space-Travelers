@@ -11,10 +11,10 @@ import './App.css';
 
 const App = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
+
+  useEffect(() => { dispatch(getRockets()); }, [dispatch]);
   useEffect(() => { dispatch(missionsFetch()); }, []);
+
   return (
     <Router>
       <Menu />
