@@ -57,5 +57,6 @@
 
   .rocketDescription {
     max-height: 250px;
+    margin-left: 1rem;
   }
 }

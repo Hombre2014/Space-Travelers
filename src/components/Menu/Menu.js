@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import planet from '../../planet.png';
 import './Menu.css';
 
@@ -14,13 +14,13 @@ const Menu = () => (
       </div>
       <ul className="spaceLinks">
         <li>
-          <Link to="/">Rockets</Link>
+          <NavLink ClassName="active" to="/">Rockets</NavLink>
         </li>
         <li>
-          <Link to="/missions">Missions</Link>
+          <NavLink ClassName="active" to="/missions">Missions</NavLink>
         </li>
         <li>
-          <Link to="/profile">My profile</Link>
+          <NavLink ClassName="active" to="/profile">My profile</NavLink>
         </li>
       </ul>
     </nav>

@@ -21,6 +21,10 @@ nav {
   margin: 10px 20px;
 }
 
+.active {
+  text-decoration: underline !important;
+}
+
 .menuLogo {
   display: flex;
   align-items: center;
@@ -42,11 +46,12 @@ nav {
 .spaceLinks li a {
   text-decoration: none;
   color: #007bff;
-  font: normal bold 15px 'Popppins', sans-serif;
+  font-size: 1.4rem;
 }
 
-.spaceLinks li a:focus {
-  text-decoration: underline;
+li:nth-last-of-type(1) {
+  padding-left: 1rem;
+  border-left: 2px solid #7e7e7e;
 }
 
 .line {
@@ -61,11 +66,15 @@ nav {
     justify-content: flex-start;
   }
 
+  .active {
+    text-decoration: underline;
+  }
+
   .spaceLinks {
     align-items: baseline;
   }
 
   .menuLogo h1 {
-    font: normal bold 28px 'Poppins', sans-serif;
+    font: normal 2.4rem 'Poppins', sans-serif;
   }
 }
